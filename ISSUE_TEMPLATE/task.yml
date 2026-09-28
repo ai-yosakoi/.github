@@ -1,0 +1,18 @@
+name: やってほしいこと
+description: 直してほしい・足してほしい・調べてほしいこと。Claude の番（状態:未着手）で立つ
+labels: ["状態:未着手"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: やってほしいこと
+      description: 気づいたこと・困っていることをそのまま。スクショは貼るだけでよい
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: どこの話か（分かれば）
+      description: 画面の名前・操作の手順・端末（iPhone / Android / PC）など
+    validations:
+      required: false
